@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Herbst Tecnologia</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:#333;
+    line-height:1.6;
+}
+
+/* CABEÇALHO */
+
+header{
+    background:#003366;
+    height:110px;
+    display:flex;
+    align-items:center;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    height:240px;
+    width:auto;
+    display:block;
+    transform:translateY(-60px);
+    margin-left:-320px;
+}
+
+/* MENU */
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:40px;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    opacity:.8;
+}
+
+/* BANNER */
+
+.banner{
+    background:#f4f6f8;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.banner h1{
+    font-size:64px;
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.banner p{
+    font-size:28px;
+    color:#555;
+    max-width:900px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    padding:16px 35px;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#004c99;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:80px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#003366;
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.sobre{
+    background:#f7f7f7;
+}
+
+.sobre p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:22px;
+}
+
+.cards{
+    display:flex;
+    gap:25px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    width:350px;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:18px;
+}
+
+/* CONTATO */
+
+.contato{
+    background:#f7f7f7;
+    text-align:center;
+}
+
+.contato p{
+    font-size:22px;
+    margin:12px 0;
+}
+
+/* RODAPÉ */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+    border-radius:50px;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+/* RESPONSIVO */
+
+@media(max-width:900px){
+
+    header{
+        height:auto;
+        padding:20px 0;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .logo{
+        height:110px;
+    }
+
+    .menu{
+        gap:20px;
+    }
+
+    .banner h1{
+        font-size:42px;
+    }
+
+    .banner p{
+        font-size:20px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    h2{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <nav>
+
+            <img src="logo.png" alt="Herbst Tecnologia" class="logo">
+
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="banner">
+
+    <h1>Conformidade Garantida</h1>
+
+    <p>
+        Assistência técnica especializada para equipamentos médicos,
+        laboratoriais e hospitalares.
+    </p>
+
+    <a href="#contato" class="btn">
+        SOLICITAR ATENDIMENTO
+    </a>
+
+</section>
+
+<section id="sobre" class="sobre">
+
+    <div class="container">
+
+        <h2>Quem Somos</h2>
+
+        <p>
+            A Herbst Tecnologia atua na manutenção preventiva,
+            manutenção corretiva e assistência técnica especializada
+            para equipamentos médicos, laboratoriais e hospitalares,
+            oferecendo soluções com qualidade, segurança e conformidade.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="servicos">
+
+    <div class="container">
+
+        <h2>Nossos Serviços</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Manutenção Preventiva</h3>
+                <p>Planejamento e prevenção de falhas em equipamentos.</p>
+            </div>
+
+            <div class="card">
+                <h3>Manutenção Corretiva</h3>
+                <p>Diagnóstico e reparo especializado.</p>
+            </div>
+
+            <div class="card">
+                <h3>Suporte Técnico</h3>
+                <p>Atendimento rápido e eficiente para seus equipamentos.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contato" class="contato">
+
+    <div class="container">
+
+        <h2>Contato</h2>
+
+        <p><strong>Telefone:</strong> (27) 98811-1465</p>
+
+        <p><strong>E-mail:</strong> herbsttecnologia@gmail.com</p>
+
+        <p><strong>Localização:</strong> Vila Velha - ES</p>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Herbst Tecnologia - Todos os direitos reservados.
+</footer>
+
+<a
+href="https://wa.me/5527988111465"
+target="_blank"
+class="whatsapp">
+WhatsApp
+</a>
+
+</body>
+</html>
